@@ -1,0 +1,270 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Candra Wijaya ♡</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: #63354b;
+  background: #fff0f6;
+  text-align: center;
+}
+
+header {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffe1ed, #fff8fb);
+}
+
+h1 {
+  font-size: clamp(40px, 8vw, 68px);
+  color: #c45180;
+}
+
+h2 { color: #c45180; }
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 22px;
+  margin: 8px;
+  background: #c45180;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+section { padding: 50px 18px; }
+
+.card {
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 28px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 8px 28px #e9b6cc55;
+}
+
+.photo {
+  width: min(90%, 380px);
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 22px;
+  margin: 20px auto;
+  box-shadow: 0 8px 24px #c4518033;
+}
+
+.hidden { display: none; }
+
+.message {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 24px;
+  border-radius: 20px;
+  background: #fff;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+footer {
+  padding: 35px 15px;
+  color: #c45180;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <p>♡ A LITTLE SURPRISE, MADE WITH LOVE ♡</p>
+
+  <h1>Hi, Candra<br>Wijaya!</h1>
+
+  <p>
+    Hai, cowok kesayanganku.<br>
+    Ada sesuatu yang aku buat khusus buat kamu.
+  </p>
+
+  <p>
+    Walaupun jarak memisahkan kita,<br>
+    semoga halaman kecil ini membuatmu merasa dekat denganku. ❤️
+  </p>
+
+  <button onclick="bukaSurprise()">
+    KLIK DI SINI, CANDRA 💌
+  </button>
+</header>
+
+<main id="isi" class="hidden">
+
+  <section>
+    <div class="card">
+      <h2>Untuk Candra, dari Ayu ♡</h2>
+
+      <!-- GANTI foto-kita.jpg dengan nama file fotomu -->
+      <img
+        src="foto-kita.jpg"
+        alt="Foto kenangan Ayu dan Candra"
+        class="photo"
+        onerror="this.style.display='none'"
+      >
+
+      <p>
+        Sayang, aku membuat halaman kecil ini supaya kamu punya
+        sesuatu untuk dibuka saat merindukanku.
+      </p>
+
+      <p>
+        Memang nggak mudah menjalani hubungan jarak jauh.
+        Ada saatnya aku ingin berada di sampingmu, menggenggam
+        tanganmu, atau sekadar melihatmu secara langsung.
+        Tapi untuk sekarang, kita punya doa, kepercayaan,
+        kabar kecil, dan kesabaran untuk menjaga hubungan ini.
+      </p>
+
+      <p>
+        Jarak boleh memisahkan tempat kita berada,
+        tapi semoga nggak membuat kita berhenti saling mendekat. ❤️
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pesan kecil untuk Candra 💗</h2>
+    <p>Klik satu per satu ya, sayang.</p>
+
+    <button onclick="pesan('p1')">💌 Surat kecil dariku</button>
+    <button onclick="pesan('p2')">🥺 Kalau kamu kangen</button>
+    <button onclick="pesan('p3')">🌙 Saat malam terasa sepi</button>
+    <button onclick="pesan('p4')">🌷 Saat harimu berat</button>
+    <button onclick="pesan('p5')">🎁 Kejutan terakhir</button>
+
+    <div id="p1" class="message hidden">
+      Candra, terima kasih sudah hadir di hidupku.
+      Aku senang bisa mengenalmu lebih dekat.
+      Aku nggak meminta hubungan yang selalu sempurna.
+      Aku hanya ingin kita sama-sama belajar, saling memahami,
+      dan tetap memilih satu sama lain meski ada hari yang nggak mudah.
+      <br><br>— Ayu, dengan sayang ♡
+    </div>
+
+    <div id="p2" class="message hidden">
+      Kalau kamu lagi kangen aku, bayangin aku sedang senyum kecil
+      sambil memikirkanmu juga.
+      Walaupun aku belum bisa memelukmu sekarang,
+      kirimkan kangennya lewat pesan atau telepon ya, sayang.
+      Aku juga kangen kamu. ❤️
+      <br><br>Sini, peluk virtual dulu 🤍
+    </div>
+
+    <div id="p3" class="message hidden">
+      Kalau malam ini kamu merasa sepi karena aku nggak ada
+      di sampingmu, ingat bahwa di tempat yang berbeda,
+      ada aku yang juga memikirkanmu.
+      Mungkin kita melihat langit dari kota yang berbeda,
+      tapi kita tetap berada di bawah langit yang sama.
+      Semoga suatu hari nanti, malam-malam seperti ini
+      bisa kita ganti dengan waktu bersama.
+      <br><br>Selamat istirahat, cintaku. ❤️
+    </div>
+
+    <div id="p4" class="message hidden">
+      Kalau hari ini terasa berat, kamu nggak harus selalu kuat.
+      Istirahat sebentar juga nggak apa-apa.
+      Aku mungkin nggak bisa menyelesaikan semua masalahmu,
+      tapi aku mau mendengarkan dan mendukungmu sebisaku.
+      Jangan lupa jaga diri ya, sayang. 🌷
+    </div>
+
+    <div id="p5" class="message hidden">
+      Terima kasih sudah menjadi bagian dari ceritaku.
+      Aku tahu hubungan jarak jauh nggak selalu mudah.
+      Akan ada rindu yang nggak bisa langsung dipeluk,
+      dan hari-hari saat kita hanya bisa saling menyapa lewat layar.
+      Tapi aku ingin kita terus berusaha, saling percaya,
+      jujur, dan saling menguatkan.
+      <br><br>
+      Jarak ini adalah bagian dari perjalanan kita,
+      bukan ukuran seberapa besar rasa sayangku.
+      Semoga suatu hari nanti kita bisa bertemu dan
+      membuat lebih banyak kenangan bersama.
+      <br><br>
+      <strong>I love you, Candra. ♡</strong><br>
+      — Ayu
+      <br><br>
+      <button onclick="alert('Peluk jauh untuk Candra! Ayu sayang kamu ❤️')">
+        KLIK KALAU KAMU SAYANG AYU 💞
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  A little piece of my heart, just for you. ♡<br>
+  — Ayu
+</footer>
+
+<!-- GANTI musik-kita.mp3 dengan nama file musikmu -->
+<audio id="musik" loop>
+  <source src="musik-kita.mp3" type="audio/mpeg">
+</audio>
+
+<button
+  onclick="toggleMusik()"
+  style="position:fixed;bottom:15px;right:12px;"
+>
+  ♫ Musik
+</button>
+
+<script>
+function bukaSurprise() {
+  document.getElementById("isi").classList.remove("hidden");
+
+  const musik = document.getElementById("musik");
+  musik.play().catch(() => {
+    alert("Kalau musik belum berbunyi, periksa nama file musiknya ya.");
+  });
+
+  document.getElementById("isi").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+function pesan(id) {
+  document.getElementById(id).classList.toggle("hidden");
+}
+
+function toggleMusik() {
+  const musik = document.getElementById("musik");
+
+  if (musik.paused) {
+    musik.play().catch(() => {
+      alert("Periksa file musik dan nama filenya ya.");
+    });
+  } else {
+    musik.pause();
+  }
+}
+</script>
+
+</body>
+</html>
+```
